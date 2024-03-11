@@ -9,12 +9,11 @@ class Page3A extends StatefulWidget {
 }
 
 class _Page3AState extends State<Page3A> {
-  final String? name = Get.parameters['name'];
-
   String currentSelection = 'Give me candy';
 
   @override
   Widget build(BuildContext context) {
+    final String? name = Get.parameters['name'];
     return Scaffold(
       appBar: AppBar(title: Text('$name Option A'), key: const Key('appBar')),
       body: Center(

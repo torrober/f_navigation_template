@@ -37,7 +37,7 @@ void main() {
       initialRoute: '/page1',
       getPages: [
         GetPage(name: '/page1', page: () => const Page1()),
-        GetPage(name: '/page2', page: () => Page2()),
+        GetPage(name: '/page2', page: () => const Page2()),
       ],
     );
   }
